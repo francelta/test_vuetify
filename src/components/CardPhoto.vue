@@ -177,9 +177,9 @@
       return {
         dialog: false,
         openInfo: false,
-        formDialog: false, // Variable para controlar la visibilidad del modal de formulario
-        successDialog: false, // Variable para controlar la visibilidad del modal de éxito
-        errorDialog: false, // Variable para controlar la visibilidad del modal de error
+        formDialog: false, 
+        successDialog: false, 
+        errorDialog: false, 
         formPedidoPlato: false,
         
 
@@ -193,7 +193,7 @@
     this.formPedidoPlato = false;
   },
   handleFinalize() {
-    this.$emit('order-updated');  // Esta es la línea que necesitas
+    this.$emit('order-updated'); 
     this.closeFormFood();
   
 
