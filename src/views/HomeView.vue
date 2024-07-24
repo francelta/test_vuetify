@@ -42,12 +42,12 @@
           { name: 'Taco de Pollo', price: '€5', imgSrc: require('@/assets/chicken_taco.png') },
           { name: 'Helado de Vainilla', price: '€3', imgSrc: require('@/assets/vanilla_ice_cream.png') },
         ],
-        orders: [] // Definir orders aquí
+        orders: [] 
       };
     },
     computed: {
       hasOrders() {
-        return this.orders && this.orders.length > 0; // Asegurarse de que orders esté definido
+        return this.orders && this.orders.length > 0; 
       }
     },
     methods: {
