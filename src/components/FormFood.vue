@@ -146,7 +146,7 @@ export default {
       let orders = JSON.parse(localStorage.getItem('orders')) || [];
       orders.push(order);
       localStorage.setItem('orders', JSON.stringify(orders));
-      this.$emit('finalize'); // Emitimos finalize en lugar de close
+      this.$emit('finalize'); 
     },
     cancel() {
       this.$emit('close');
